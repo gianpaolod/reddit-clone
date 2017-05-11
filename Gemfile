@@ -33,8 +33,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'devise'
-gem 'bourbon'
-gem 'neat'
+gem 'bourbon', '~> 4.2.6'
+gem 'neat', '~> 1.8.0'
 gem 'refills'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'font-awesome-rails'
