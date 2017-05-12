@@ -37,4 +37,16 @@ describe PostsController, type: :controller do
      end
     end
   end
+  
+  describe 'GET #index' do
+    before(:each) do
+      4.times { FactoryGirl.create :post }
+      get :index
+    end
+    
+    it 'returns 4 records from de database' do
+      expect(response).to render_template :index
+    end
+  end
+  
 end

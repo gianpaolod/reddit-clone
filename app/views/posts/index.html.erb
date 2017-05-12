@@ -1,1 +1,23 @@
 <h1>Hello</h1>
+
+<div clas="bigbox">
+  <div class="box">
+    
+    <% @post.each do |post| %>
+    
+      <ul>
+        <div class="post-box">
+          <h3><%= post.title %></h3>
+          
+          <li><%= auto_link(post.url) %></li>
+          
+          <li class="bold"><%= post.user.username %></li>
+          <li class="date"><%= time_ago_in_words(post.created_at) %></li>
+          <li class="author"><%=  %></li>
+        </div>
+      </ul>
+      
+    <% end %>
+    
+  </div>
+</div>
